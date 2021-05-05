@@ -572,8 +572,7 @@ public final class NetworkRegistrationInfo implements Parcelable {
         return "Unknown reg state " + registrationState;
     }
 
-    /** @hide */
-    public static String nrStateToString(@NRState int nrState) {
+    private static String nrStateToString(@NRState int nrState) {
         switch (nrState) {
             case NR_STATE_RESTRICTED:
                 return "RESTRICTED";
