@@ -366,7 +366,7 @@ public class ThemeOverlayController extends SystemUI implements Dumpable {
         });
     }
 
-    protected void reevaluateSystemTheme(boolean forceReload) {
+    private void reevaluateSystemTheme(boolean forceReload) {
         final WallpaperColors currentColors = mCurrentColors;
         final int mainColor;
         final int accentCandidate;
